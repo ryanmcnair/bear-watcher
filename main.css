@@ -1,0 +1,15 @@
+body {
+    place-items: center;
+}
+
+#river {
+    display: flex;
+}
+
+.card {
+    border: 5px black;
+}
+
+img {
+    width: 300px;
+}
