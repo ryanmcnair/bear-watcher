@@ -1,15 +1,32 @@
 body {
-    place-items: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRKYtVlfp_K73R6Ozu7ceqvetM2lobtddiFbA&usqp=CAU);
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+h1 {
+    text-align: center;
 }
 
 #river {
-    display: flex;
+    margin: 0 auto;
+    justify-content: center;
 }
 
-.card {
-    border: 5px black;
+#bearsform {
+    /* background-color: wheat; */
+    text-align: center;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 
-img {
-    width: 300px;
+.img-container {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card{
+    text-align: center;
 }

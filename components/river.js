@@ -1,43 +1,40 @@
-import { bearsArray } from './../helpers/bearsArray.js'
+import { bearsArray } from "../helpers/bearsArray.js";
+import { timeEvent, dateTime } from "./fishtally.js"
+import { addBears } from "./addBears.js"
 
 const makeRiver = () => {
-
     $("#river").html("");
     bearsArray.forEach((item, index) => {
-        $("#river").append(`
+      $("#river").append(`
+          
+          <div class="card" style="width: 18rem;">
+          <div class="img-container" style="background-image: url(${item.imageUrl})">
+          </div>
+              
+              <div class="card-body">
+                <h2 class="card-title">${item.name}</h2>
+                <p class="card-text"></p>
+              </div>
+              <div class="progressButtons">
+                  <button id="attempted-${index}">Attempted</button>
+                  <b id="attempt-${index}">${item.attempted}</b>
+                  <button id="caught-${index}">Caught</button>
+              </div
+              <div class="counters">
+                  <h6 id="time">Last Caught</h6>
+                  <b id="timeStamp-${index}">${item.dateTime}</b>
+                  <h6 id="totalTitle">Total Fish Caught</h6>
+                  <b id="totalCount-${index}">${item.total}</b>
+             
+          </div>
+          `);
+          
+          timeEvent(bearsArray, index);
+          
+    });
+    
         
-        <div class="card" style="width: 18rem;">
-            <img class="img-thumbnail" src="${item.imageUrl}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">${item.name}</h5>
-              <p class="card-text"></p>
-            </div>
-        </div>
-        `);
-    });
-
-}
-
-const addBears = () => {
-    console.log("in here bears");
-    const name = $("#name").val();
-    const imageUrl = $("#imageUrl").val();
-
-    bearsArray.push({
-        name: name,
-        imageUrl: imageUrl
-    });
-
-    makeRiver(bearsArray);
-    console.log(bearsArray);
-    $("#name").val("");
-    $("#imageUrl").val("");
-
-}
-
-// https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/GrizzlyBearJeanBeaufort.jpg/1024px-GrizzlyBearJeanBeaufort.jpg
-
-
-
-
-export { addBears, makeRiver }
+};
+  
+  
+  export { makeRiver };
