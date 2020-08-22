@@ -41,3 +41,7 @@ Each year in early september one bear is awarded the Fattest Bear award.  This a
 Figma Link:
 
 https://www.figma.com/file/14OjVzWfSYPUe339hLAH1Y/Bear-Watcher
+
+##Deployed site: 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7b445ce9-21f6-43fc-82e9-906bfcea9151/deploy-status)](https://app.netlify.com/sites/mcnair-bearwatcher/deploys)
