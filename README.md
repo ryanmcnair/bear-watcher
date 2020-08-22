@@ -36,13 +36,13 @@ You have been tasked with creating a site scientists and park ranger can use to 
 ## Bonus #2: Fattest Bear Award
 Each year in early september one bear is awarded the Fattest Bear award.  This award goes to the bear who gains the most weight between July and September.  Create an awards section on your application and award GOLD to the bear who has eaten the most fish, SILVER to the bear with the second most eaten fish, and BRONZE to the bear with the third most eaten fish.  Where applicable your application should show two winners for an award if the number of fish is tied.
 
-##Wireframe
+## Wireframe:
 
 Figma Link:
 
 https://www.figma.com/file/14OjVzWfSYPUe339hLAH1Y/Bear-Watcher
 
-##Deployed site: 
+## Deployed site: 
 
 https://mcnair-bearwatcher.netlify.app/
 
